@@ -1,6 +1,6 @@
 const musicContainer = document.querySelector('.music-container')
 const playBtn = document.querySelector('#play')
-const prevBtn = document.querySelector('#previous')
+const prevBtn = document.querySelector('#prev')
 const nextBtn = document.querySelector('#next')
 const audio = document.querySelector('#audio')
 const progress = document.querySelector('.progress')
@@ -12,7 +12,7 @@ const cover = document.querySelector('#cover')
 const songs = ['bts-permission-to-dance', 'the-rose-rain', 'lil-nas-baby', 'bts-untold', 'face-woosung', 'skz-gods-menu']
 
 //keep track of songs
-let songIndex = 0
+let songIndex = 4
 
 //Initially load song info DOM
 loadSong(songs[songIndex])
@@ -65,7 +65,7 @@ function nextSong() {
 }
 
 function updateProgress(e) {
-  const {duration, currentTime} = e.srcElement.currentTime
+  const {duration, currentTime} = e.srcElement
   const progressPercent = (currentTime / duration) * 100
   progress.style.width = `${progressPercent}%`
 }
@@ -96,3 +96,5 @@ prevBtn.addEventListener('click', nextSong)
 audio.addEventListener('timeupdate', updateProgress)
 
 progressContainer.addEventListener('click', setProgress)
+
+audio.addEventListener('ended', nextSong)
