@@ -12,7 +12,7 @@ const cover = document.querySelector('#cover')
 const songs = ['bts-permission-to-dance', 'the-rose-rain', 'lil-nas-baby', 'doja-cat-street', 'bts-untold', 'face-woosung', 'skz-gods-menu', 'doja-woman']
 
 //keep track of songs
-let songIndex = 4
+let songIndex = 3
 
 //Initially load song info DOM
 loadSong(songs[songIndex])
