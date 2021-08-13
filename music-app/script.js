@@ -9,7 +9,7 @@ const title = document.querySelector('#title')
 const cover = document.querySelector('#cover')
 
 //Song titles
-const songs = ['bts-permission-to-dance', 'the-rose-rain', 'lil-nas-baby', 'bts-untold', 'face-woosung', 'skz-gods-menu']
+const songs = ['bts-permission-to-dance', 'the-rose-rain', 'lil-nas-baby', 'doja-cat-street', 'bts-untold', 'face-woosung', 'skz-gods-menu', 'doja-woman']
 
 //keep track of songs
 let songIndex = 4
